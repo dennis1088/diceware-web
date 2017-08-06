@@ -1,2 +1,2 @@
-require './diceware_web'
+require './app'
 run Sinatra::Application
