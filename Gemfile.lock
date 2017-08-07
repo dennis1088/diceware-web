@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/dennis1088/diceware
+  revision: 2a156d90fba0ba4f689fcdfb007d0bee5e977378
+  specs:
+    diceware (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -16,7 +22,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  sinatra
+  diceware!
+  sinatra!
 
 BUNDLED WITH
    1.13.3
