@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/dennis1088/diceware
-  revision: 2a156d90fba0ba4f689fcdfb007d0bee5e977378
+  revision: 74c8504ddadadd525c2aa7f2e3867e1dba79f0e4
   specs:
     diceware (0.1.0)
 
@@ -8,7 +8,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     mustermann (1.0.0)
-    rack (2.0.1)
+    rack (2.0.3)
     rack-protection (2.0.0)
       rack
     sinatra (2.0.0)
@@ -16,7 +16,7 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.0)
       tilt (~> 2.0)
-    tilt (2.0.5)
+    tilt (2.0.8)
 
 PLATFORMS
   ruby
