@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -23,16 +24,16 @@
 				<h1>Diceware Passphrase</h1>
 				<pre><%= passphrase %></pre>
 				<form class="" action="/" method="post">
-					<div class="">
-						<label for="num_words">Numbers of Words</label>
+					<div class="option">
 						<input type="number" name="num_words" value="<%= num_words %>">
+            <label for="num_words">words</label>
 					</div>
-					<div class="">
-						<input type="checkbox" name="capitalize">
+					<div class="option">
+						<input type="checkbox" id="capitalize" name="capitalize" <% if capitalize == 'on' %>checked<% end %>>
 						<label for="capitalize">Capitalize</label>
 					</div>
-					<div class="">
-						<input type="checkbox" name="add_digit">
+					<div class="option">
+            <input type="checkbox" id="add_digit" name="add_digit" <% if add_digit == 'on' %>checked<% end %>>
 						<label for="add_digit">Add Digit</label>
 					</div>
 					<button type="submit">Generate</button>
