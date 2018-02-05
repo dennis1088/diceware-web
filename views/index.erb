@@ -22,7 +22,9 @@
 
         <!-- Add your site or application content here -->
 				<h1>🎲 Diceware Passphrase</h1>
-				<pre><%= passphrase %></pre>
+        <div class="copy">
+          <input class="copy__text" type="text" value="<%= passphrase %>" readonly><button class="copy__button">✂︎</button>
+        </div>
 				<form class="" action="/" method="post">
 					<div class="option">
 						<input type="number" name="num_words" value="<%= num_words %>">
@@ -38,6 +40,12 @@
 					</div>
 					<button type="submit">Generate</button>
 				</form>
+        <h2>What is Diceware?</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <h2>References</h2>
+        <p><a href="#">Link</a></p>
+        <p><a href="#">Link</a></p>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
