@@ -11,8 +11,15 @@ get '/' do
   gen_request = Diceware::GeneratePassphraseRequest.new(num_words, capitalize, add_digit)
   passphrase = gen.generate(gen_request)
 
-  erb :index, locals: { passphrase: passphrase,
+  request.accept.each do |type|
+    case type.to_s
+    when 'text/html'
+      halt erb :index, locals: { passphrase: passphrase,
                         num_words: num_words,
                         capitalize: capitalize,
                         add_digit: add_digit }
+    when 'application/json'
+      halt passphrase.to_json
+    end
+  end
 end
