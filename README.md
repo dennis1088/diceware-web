@@ -12,6 +12,8 @@ This method of choosing a passphrase is not only secure but incredibly simple ma
 
 [Demo](http://pass.dennis.run)
 
+[Diceware Gem](https://github.com/dennis1088/diceware)
+
 [The Diceware Passphrase Home Page](http://world.std.com/~reinhold/diceware.html)
 
 [Password Strength xkcd Comic](https://xkcd.com/936/)
