@@ -1,17 +1,19 @@
 var copy = (function() {
-  var sourceElement = $('.copy__text');
-  var actionElement = $('.copy__button');
+  var sourceElement = document.querySelector('.copy__text');
+  var actionElement = document.querySelector('.copy__button');
 
   var init = function() {
     bindActionHandler();
   };
 
   var bindActionHandler = function() {
-    actionElement.click(copySourceText);
+    actionElement.addEventListener('click', copySourceText, false);
   };
 
   var copySourceText = function() {
+    sourceElement.setAttribute('readonly', '');
     sourceElement.select();
+    sourceElement.setSelectionRange(0, sourceElement.value.length);
     document.execCommand("copy");
   };
 
