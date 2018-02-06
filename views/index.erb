@@ -25,17 +25,17 @@
         <div class="copy">
           <input class="copy__text" type="text" value="<%= passphrase %>"><button class="copy__button">✂︎</button>
         </div>
-				<form class="" action="/" method="post">
+				<form class="" action="/" method="get">
 					<div class="option">
 						<input type="number" name="num_words" value="<%= num_words %>">
             <label for="num_words">words</label>
 					</div>
 					<div class="option">
-						<input type="checkbox" id="capitalize" name="capitalize" <% if capitalize == 'on' %>checked<% end %>>
+						<input type="checkbox" id="capitalize" name="capitalize" <% if capitalize %>checked<% end %>>
 						<label for="capitalize">Capitalize</label>
 					</div>
 					<div class="option">
-            <input type="checkbox" id="add_digit" name="add_digit" <% if add_digit == 'on' %>checked<% end %>>
+            <input type="checkbox" id="add_digit" name="add_digit" <% if add_digit %>checked<% end %>>
 						<label for="add_digit">Add Digit</label>
 					</div>
 					<button type="submit">Generate</button>
