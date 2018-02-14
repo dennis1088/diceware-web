@@ -1,7 +1,7 @@
+# frozen_string_literal: true
 require File.expand_path '../test_helper.rb', __FILE__
 
 class DicewareTest < MiniTest::Unit::TestCase
-
   include Rack::Test::Methods
 
   def app
