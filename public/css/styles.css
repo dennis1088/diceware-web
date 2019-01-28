@@ -4,6 +4,7 @@ body {
   max-width: 500px;
   margin: 0 auto;
   padding: 0px 20px;
+  line-height: 1.5;
 }
 
 button {
@@ -36,7 +37,7 @@ input[type=checkbox] + label:before {
 }
 
 input[type=checkbox]:checked + label::before {
-  background: black;
+  background-image: radial-gradient(gray, black);
   border-color: black;
   color: white;
 }
@@ -47,19 +48,19 @@ input[type=checkbox]:checked + label::before {
 
 input[type=number] {
   border-radius: 5px;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #D3CDB6;
   padding: 5px;
   width:40px;
 }
 
 h1 {
-  margin-bottom: 0px;
+  text-align: center;
 }
 
 input[type=text] {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #D3CDB6;
 }
 
 .copy {
@@ -77,4 +78,18 @@ input[type=text] {
   flex: 1;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+  min-width: 0px;
+}
+
+.card {
+  background: #F6F3E9;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.25);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 400px) {
+  h1 {
+    text-align: left;
+  }
 }
