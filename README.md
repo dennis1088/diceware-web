@@ -4,6 +4,26 @@ Diceware is a method of creating a strong and secure passphrase. A passphrase is
 
 This method of choosing a passphrase is not only secure but incredibly simple making it an ideal method for creating such passwords. Passphrases of this form are also easier for a person to memorize as well since. Memorizing `quibble-styling-anglican` is much easier than `o8mtKYARrN%V`. This application generates passphrases using the above method. It also allows some extra settings as some authentication systems require either capital letters and/or a number as well.
 
+## How to Setup
+
+Run the following command to install all required Gems.
+
+```
+bundle install
+```
+
+Clone the `diceware` gem and install locally.
+
+```
+git clone https://github.com/dennis1088/diceware.git
+cd diceware
+rake build
+gem install pkg/diceware-0.1.0.gem
+```
+
+The `diceware` is required for this project. 
+
+
 ## How to Run
 
 `ruby app.rb`
